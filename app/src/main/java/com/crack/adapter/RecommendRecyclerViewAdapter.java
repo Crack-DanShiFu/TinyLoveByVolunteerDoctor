@@ -14,11 +14,15 @@ import com.crack.tinylovebyvolunteerdoctor.R;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class RecommendRecyclerViewAdapter extends RecyclerView.Adapter<RecommendRecyclerViewAdapter.ItemHolder>{
     private List<RecommendItem> mItems;
 
     public RecommendRecyclerViewAdapter(List<RecommendItem> mItems) {
         this.mItems = mItems;
+
     }
 
     @NonNull
@@ -39,15 +43,16 @@ public class RecommendRecyclerViewAdapter extends RecyclerView.Adapter<Recommend
         return mItems.size();
     }
     class ItemHolder extends RecyclerView.ViewHolder {
+        @BindView(R.id.recommendItemLeftImg)
         ImageView recommendItemLeftImg;
+        @BindView(R.id.recommendItemTitle)
         TextView recommendItemTitle;
+        @BindView(R.id.recommendItemDetails)
         TextView recommendItemDetails;
 
         ItemHolder(View item) {
             super(item);
-            recommendItemLeftImg = item.findViewById(R.id.recommendItemLeftImg);
-            recommendItemTitle = item.findViewById(R.id.recommendItemTitle);
-            recommendItemDetails = item.findViewById(R.id.recommendItemDetails);
+            ButterKnife.bind(this,item);
         }
     }
 }

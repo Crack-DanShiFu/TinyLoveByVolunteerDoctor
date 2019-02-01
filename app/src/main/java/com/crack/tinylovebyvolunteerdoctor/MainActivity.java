@@ -32,6 +32,13 @@ public class MainActivity extends BaseActivity {
         mData = new ArrayList<>();
         LogUtils.d("11111111");
         mData.add(new RecommendItem(R.drawable.ic_menu,"1111","2222"));
+        mData.add(new RecommendItem(R.drawable.ic_menu,"1111","2222"));
+        mData.add(new RecommendItem(R.drawable.ic_menu,"1111","2222"));
+        mData.add(new RecommendItem(R.drawable.ic_menu,"1111","2222"));
+        mData.add(new RecommendItem(R.drawable.ic_menu,"1111","2222"));
+        mData.add(new RecommendItem(R.drawable.ic_menu,"1111","2222"));
+        mData.add(new RecommendItem(R.drawable.ic_menu,"1111","2222"));
+        mData.add(new RecommendItem(R.drawable.ic_menu,"1111","2222"));
 
         mLinearLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
