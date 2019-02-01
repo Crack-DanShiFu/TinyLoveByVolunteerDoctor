@@ -3,4 +3,7 @@
     <dimen name="toolBarHeight">60dp</dimen>
     <dimen name="toolBarLeft">30dp</dimen>
     <dimen name="toolBarRight">30dp</dimen>
+    <dimen name="toolBarTitleFontSize">20dp</dimen>
+    <dimen name="recommendItemHeight">120dp</dimen>
+    <dimen name="recommendItemTitleFontSize">20dp</dimen>
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="@dimen/toolBarHeight"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.v7.widget.Toolbar
@@ -9,6 +9,14 @@
         android:layout_height="@dimen/toolBarHeight"
         android:background="@color/globalRed"
         app:navigationIcon="@drawable/ic_menu">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name_ZH"
+            android:textColor="@color/globalWhite"
+            android:textSize="@dimen/toolBarTitleFontSize"
+            android:layout_gravity="center"
+            />
         <ImageView
             android:layout_width="@dimen/toolBarLeft"
             android:layout_height="@dimen/toolBarLeft"
