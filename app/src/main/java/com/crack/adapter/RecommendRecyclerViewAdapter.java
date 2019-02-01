@@ -1,10 +1,12 @@
 package com.crack.adapter;
 
+import android.graphics.Bitmap;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.crack.component.RecommendItem;
@@ -27,6 +29,7 @@ public class RecommendRecyclerViewAdapter extends RecyclerView.Adapter<Recommend
 
     @Override
     public void onBindViewHolder(@NonNull RecommendRecyclerViewAdapter.ItemHolder itemHolder, int i) {
+        itemHolder.recommendItemLeftImg.setImageResource(mItems.get(i).getLeftImgId());
         itemHolder.recommendItemTitle.setText(mItems.get(i).getTitle());
         itemHolder.recommendItemDetails.setText(mItems.get(i).getDetails());
     }
@@ -36,12 +39,13 @@ public class RecommendRecyclerViewAdapter extends RecyclerView.Adapter<Recommend
         return mItems.size();
     }
     class ItemHolder extends RecyclerView.ViewHolder {
-
+        ImageView recommendItemLeftImg;
         TextView recommendItemTitle;
         TextView recommendItemDetails;
 
         ItemHolder(View item) {
             super(item);
+            recommendItemLeftImg = item.findViewById(R.id.recommendItemLeftImg);
             recommendItemTitle = item.findViewById(R.id.recommendItemTitle);
             recommendItemDetails = item.findViewById(R.id.recommendItemDetails);
         }

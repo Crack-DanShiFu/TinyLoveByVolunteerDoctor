@@ -4,6 +4,7 @@
     android:layout_height="@dimen/recommendItemHeight"
     android:layout_marginTop="10dp">
     <ImageView
+        android:id="@+id/recommendItemLeftImg"
         android:layout_width="140dp"
         android:layout_height="120dp"
         android:background="@color/globalRed"
