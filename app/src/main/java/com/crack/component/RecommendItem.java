@@ -1,21 +1,23 @@
 package com.crack.component;
 
+import android.graphics.drawable.BitmapDrawable;
+
 public class RecommendItem {
-    private int leftImgId;
+    private BitmapDrawable leftImgId;
     private String title;
     private String details;
 
-    public RecommendItem(int leftImgId, String title, String details) {
+    public RecommendItem(BitmapDrawable leftImgId, String title, String details) {
         this.leftImgId = leftImgId;
         this.title = title;
         this.details = details;
     }
 
-    public int getLeftImgId() {
+    public BitmapDrawable getLeftImgId() {
         return leftImgId;
     }
 
-    public void setLeftImgId(int leftImgId) {
+    public void setLeftImgId(BitmapDrawable leftImgId) {
         this.leftImgId = leftImgId;
     }
 

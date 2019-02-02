@@ -33,7 +33,7 @@ public class RecommendRecyclerViewAdapter extends RecyclerView.Adapter<Recommend
 
     @Override
     public void onBindViewHolder(@NonNull RecommendRecyclerViewAdapter.ItemHolder itemHolder, int i) {
-        itemHolder.recommendItemLeftImg.setImageResource(mItems.get(i).getLeftImgId());
+        itemHolder.recommendItemLeftImg.setImageBitmap(mItems.get(i).getLeftImgId().getBitmap());
         itemHolder.recommendItemTitle.setText(mItems.get(i).getTitle());
         itemHolder.recommendItemDetails.setText(mItems.get(i).getDetails());
     }
